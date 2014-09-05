@@ -1,0 +1,16 @@
+dl {
+    border: 1px solid red;
+    overflow: hidden; /* Overflow hidden can be used as a clear fix. It reminds the <dl> to wrap around its floated children */
+}
+
+dt {
+    float: left;
+    clear: left; /* Forces the <dt> underneath anything floated left */
+    width: 8rem; /* Made all the words the same width so the numbers would line up with each other */
+}
+
+dd {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
